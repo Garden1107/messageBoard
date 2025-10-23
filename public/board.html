@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Board</h1>
+  <form action="/board" method="get">
+    <input type="text" name="search" placeholder="Search..." value="" />
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    <!-- 게시글 목록 표시 -->
+    <!-- 반복문으로 각 게시글을 출력 -->
+    <% posts.forEach(function(post) { %>
+      <li>
+        <a href="/post/<%= post.id %>"><%= post.title %></a>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

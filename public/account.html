@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Registration</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Account Registration</h1>
+  
+  <!-- 사용자 등록 폼 -->
+  <form action="/account" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="username">ID(username):</label>
+    <input type="text" id="username" name="username" placeholder="Enter your ID(username)" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already have an account? <a href="/">Login here</a></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>게시판에 오신걸 환영합니다!</h1>
+  <img src="IMG_0007.PNG" width="600px" alt="사진없음">
+  <h1>Login</h1>
+
+  <!-- 로그인 폼 -->
+  <form action="/login" method="POST">
+    <label for="username">ID(username):</label>
+    <input type="text" id="username" name="username" placeholder="Enter your ID(username)" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="/account">Register here</a></p>
+</body>
+</html>
